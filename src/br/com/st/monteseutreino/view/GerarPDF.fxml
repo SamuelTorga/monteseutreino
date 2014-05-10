@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="543.0" prefHeight="543.0" prefWidth="558.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.st.monteseutreino.controller.GerarPDFController">
+  <children>
+    <Button cancelButton="true" layoutX="82.0" layoutY="504.0" mnemonicParsing="false" text="Button" />
+    <Button defaultButton="true" layoutX="418.0" layoutY="498.0" mnemonicParsing="false" text="Button" />
+    <TextArea layoutX="51.0" layoutY="291.0" prefHeight="141.0" prefWidth="456.0" promptText="Preencha aqui informações gerais sobre o seu treino" wrapText="true" />
+    <Label layoutX="49.0" layoutY="265.0" text="Observações:" />
+    <Label layoutX="75.0" layoutY="24.0" text="Nome:">
+      <labelFor>
+        <TextField fx:id="textFieldNome" layoutX="113.0" layoutY="21.0" prefWidth="200.0" />
+      </labelFor>
+    </Label>
+    <fx:reference source="textFieldNome" />
+    <Label layoutX="326.0" layoutY="24.0" text="Idade:" />
+    <TextField layoutX="370.0" layoutY="18.0" prefWidth="51.0" />
+    <Label layoutX="63.0" layoutY="58.0" text="Objetivo:" />
+    <TextField layoutX="113.0" layoutY="55.0" prefWidth="200.0" />
+    <Label layoutX="15.0" layoutY="90.0" text="Nome do instrutor:" />
+    <TextField layoutX="113.0" layoutY="87.0" prefWidth="200.0" />
+    <Label layoutX="57.0" layoutY="117.0" text="Academia:" />
+    <TextField layoutX="113.0" layoutY="121.0" prefWidth="200.0" />
+    <Label layoutX="27.0" layoutY="178.0" text="Início do período:" /><DatePicker layoutX="113.0" layoutY="174.0" /><Label layoutX="287.1845703125" layoutY="178.0" text="Término do período:" />
+<DatePicker layoutX="388.0" layoutY="174.0" />
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>

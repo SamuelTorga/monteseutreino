@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import br.com.st.monteseutreino.view.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="922.0" prefWidth="1314.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="br.com.st.monteseutreino.controller.MainFXMLController">
+  <children>
+    <AnchorPane id="AnchorPane" minHeight="59.0" prefHeight="64.1124871826172" prefWidth="1314.0" AnchorPane.bottomAnchor="857.89" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <VBox minHeight="-1.0" prefHeight="59.0" prefWidth="1024.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="Ajuda">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ToolBar>
+              <items>
+                <Button fx:id="botaoCadastrarExercicio" mnemonicParsing="false" text="Cadastrar novo exercício" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS" underline="false">
+                  <font>
+                    <Font size="16.0" fx:id="x2" />
+                  </font>
+                </Button>
+                <Button fx:id="botaoEditarExercicio" font="$x2" mnemonicParsing="false" text="Editar/Remover exercício" />
+                <Button font="$x2" mnemonicParsing="false" text="Gerar PDF" />
+              </items>
+            </ToolBar>
+          </children>
+        </VBox>
+      </children>
+    </AnchorPane>
+    <AnchorPane id="AnchorPane" prefHeight="557.3399999999999" prefWidth="191.0" styleClass="anuncio" AnchorPane.bottomAnchor="281.66" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="1118.0" AnchorPane.topAnchor="83.0">
+      <children>
+        <Text focusTraversable="false" fontSmoothingType="GRAY" layoutX="36.0" layoutY="182.0" scaleX="1.1217474211704397" scaleY="0.9417083352400235" strikethrough="false" strokeType="OUTSIDE" strokeWidth="0.0" text="ANUNCIE" textAlignment="CENTER" underline="false">
+          <font>
+            <Font size="28.0" />
+          </font>
+        </Text>
+        <Text layoutX="62.0" layoutY="257.0" scaleX="2.0654541680721774" scaleY="2.9017557732177113" strokeType="OUTSIDE" strokeWidth="0.0" text="SUA MARCA" />
+        <Text layoutX="81.0" layoutY="346.0" scaleX="4.198723911925184" scaleY="2.223652280691729" strokeType="OUTSIDE" strokeWidth="0.0" text="AQUI" />
+      </children>
+    </AnchorPane>
+    <AnchorPane id="AnchorPane" layoutX="209.0" layoutY="69.0" minHeight="403.0" prefHeight="571.3400268554688" prefWidth="738.0">
+      <children>
+        <AnchorPane minHeight="405.0" minWidth="395.0" prefHeight="577.0" prefWidth="770.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <children>
+            <ImageView fx:id="corpoImageView" fitHeight="571.3400268554688" fitWidth="491.0691144838383" layoutX="129.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../../../../resources/corpo.jpg" />
+              </image>
+            </ImageView>
+            <ImageView id="panturrilhasFrenteImageView" fx:id="panturrilhaFrenteImageView" fitHeight="85.56089782714844" fitWidth="66.90937805175781" layoutY="292.0" onMouseEntered="#mouseInPanturrilhas" onMouseExited="#mouseOutPanturrilhas" pickOnBounds="true" preserveRatio="false" AnchorPane.leftAnchor="90.0">
+              <image>
+                <Image url="@../../../../../resources/panturrilhas-esquerda.png" />
+              </image>
+            </ImageView>
+            <ImageView id="panturrilhasCostasImageView" fx:id="panturrilhaCostasImageView" fitHeight="85.1202472288688" fitWidth="61.41095733642578" layoutX="284.0" layoutY="289.0" onMouseEntered="#mouseInPanturrilhas" onMouseExited="#mouseOutPanturrilhas" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../../../../resources/panturrilhas-costas.png" />
+              </image>
+            </ImageView>
+            <ImageView fx:id="pernasFrenteImageView" fitHeight="125.376953125" fitWidth="78.92085266113281" layoutX="86.0" layoutY="164.0" onMouseEntered="#mouseInPernas" onMouseExited="#mouseOutPernas" pickOnBounds="true" preserveRatio="false">
+              <image>
+                <Image url="@../../../../../resources/pernas-frente.png" />
+              </image>
+            </ImageView>
+            <ImageView id="abdomenImageVIew" fx:id="abdomenImageView" fitHeight="76.0" fitWidth="63.85888671875" layoutX="92.0" layoutY="112.0" onMouseEntered="#mouseInAbdomen" onMouseExited="#mouseOutAbdomen" pickOnBounds="true" preserveRatio="false">
+              <image>
+                <Image url="@../../../../../resources/abdomen.png" />
+              </image>
+            </ImageView>
+            <ImageView fx:id="pernasCostasImageView" fitHeight="140.8009490966797" fitWidth="76.34756469726562" layoutX="273.0" layoutY="165.0" onMouseEntered="#mouseInPernas" onMouseExited="#mouseOutPernas" pickOnBounds="true" preserveRatio="false">
+              <image>
+                <Image url="@../../../../../resources/pernas-costas.png" />
+              </image>
+            </ImageView>
+            <ImageView fx:id="trapezioCostasImageView" fitHeight="19.666306859670378" fitWidth="69.72599792480469" layoutX="277.0" layoutY="53.0" onMouseEntered="#mouseInTrapezio" onMouseExited="#mouseOutTrapezio" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../../../../resources/trapezio-costas.png" />
+              </image>
+            </ImageView>
+            <ImageView fx:id="trapezioFrenteImageView" fitHeight="16.16785430908203" fitWidth="75.141845703125" layoutX="88.0" layoutY="54.0" onMouseEntered="#mouseInTrapezio" onMouseExited="#mouseOutTrapezio" pickOnBounds="true" preserveRatio="false">
+              <image>
+                <Image url="@../../../../../resources/trapezio-frente.png" />
+              </image>
+            </ImageView>
+            <ImageView fx:id="tricepsEsquerdoCostasImageView" fitHeight="57.0" fitWidth="21.99999237060547" layoutX="254.0" layoutY="84.0" onMouseEntered="#mouseInTriceps" onMouseExited="#mouseOutTriceps" pickOnBounds="true" preserveRatio="false">
+              <image>
+                <Image url="@../../../../../resources/triceps-costas-esquerda.png" />
+              </image>
+            </ImageView>
+            <ImageView fx:id="ombroDireitoCostasImageView" fitHeight="32.0" fitWidth="33.0" layoutX="337.0" layoutY="65.0" onMouseEntered="#mouseInOmbro" onMouseExited="#mouseOutOmbro" pickOnBounds="true" preserveRatio="false">
+              <image>
+                <Image url="@../../../../../resources/ombro_costas_direita.png" />
+              </image>
+            </ImageView>
+            <ImageView fx:id="ombroEsquerdoCostasImageView" fitHeight="30.0" fitWidth="33.0" layoutX="257.0" layoutY="66.0" onMouseEntered="#mouseInOmbro" onMouseExited="#mouseOutOmbro" pickOnBounds="true" preserveRatio="false">
+              <image>
+                <Image url="@../../../../../resources/ombro-costas-esquerda.png" />
+              </image>
+            </ImageView>
+            <ImageView id="a" fx:id="antebracoDireitoFrenteImageView" fitHeight="52.000213623046875" fitWidth="23.636459633680634" layoutX="63.0" layoutY="130.0" onMouseEntered="#mouseInAntebraco" onMouseExited="#mouseOutAntebraco" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../../../../resources/antebraço_frente_esquerda.png" />
+              </image>
+            </ImageView>
+            <ImageView id="antebracoDireitoFrenteImageView" fx:id="antebracoEsquerdoFrenteImageView" fitHeight="57.92857085698749" fitWidth="28.758865356445312" layoutX="166.0" layoutY="131.0" onMouseEntered="#mouseInAntebraco" onMouseExited="#mouseOutAntebraco" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../../../../resources/antebraço_frente_direita.png" />
+              </image>
+            </ImageView>
+            <ImageView fx:id="antebracoDireitoCostasImageView" fitHeight="54.96610355565555" fitWidth="22.838027954101562" layoutX="352.0" layoutY="128.0" onMouseEntered="#mouseInAntebraco" onMouseExited="#mouseOutAntebraco" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../../../../resources/antebraço_costas_direita.png" />
+              </image>
+            </ImageView>
+            <ImageView fx:id="tricepsDireitoCostasImageView" fitHeight="53.23529052734375" fitWidth="19.936168670654297" layoutX="350.0" layoutY="86.0" onMouseEntered="#mouseInTriceps" onMouseExited="#mouseOutTriceps" pickOnBounds="true" preserveRatio="false">
+              <image>
+                <Image url="@../../../../../resources/triceps-costas-direito.png" />
+              </image>
+            </ImageView>
+            <ImageView fx:id="antebracoEsquerdoCostasImageView" fitHeight="64.11247005039985" fitWidth="32.98540115356445" layoutX="241.0" layoutY="127.0" onMouseEntered="#mouseInAntebraco" onMouseExited="#mouseOutAntebraco" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../../../../resources/antebraço_costas_esquerda.png" />
+              </image>
+            </ImageView>
+            <ImageView id="trapezioFrenteImageView" fx:id="tricepsEsquerdoFrenteImageView" fitHeight="27.655970892944605" fitWidth="5.331271171569824" layoutX="178.0" layoutY="100.0" onMouseEntered="#mouseInTriceps" onMouseExited="#mouseOutTriceps" pickOnBounds="true" preserveRatio="true" smooth="true">
+              <image>
+                <Image url="@../../../../../resources/triceps-frente-direita.png" />
+              </image>
+            </ImageView>
+            <ImageView id="ocostasImageView" fx:id="costasImageView" fitHeight="106.26541260724372" fitWidth="73.10740661621094" layoutX="276.0" layoutY="73.0" onMouseEntered="#mouseInCostas" onMouseExited="#mouseOutCostas" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../../../../resources/costas.png" />
+              </image>
+            </ImageView>
+            <ImageView id="tricepsDireitoFrenteImageVIew" fx:id="tricepsDireitoFrenteImageView" fitHeight="45.0" fitWidth="5.9638554491895315" layoutX="67.0" layoutY="91.0" onMouseEntered="#mouseInTriceps" onMouseExited="#mouseOutTriceps" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../../../../resources/triceps-frente-esquerda.png" />
+              </image>
+            </ImageView>
+            <ImageView id="ombroEsquerdoFrenteImageView" fx:id="ombroDireitoFrenteImageView" fitHeight="38.0" fitWidth="34.0" layoutX="70.0" layoutY="65.0" onMouseEntered="#mouseInOmbro" onMouseExited="#mouseOutOmbro" pickOnBounds="true" preserveRatio="false">
+              <image>
+                <Image url="@../../../../../resources/ombro_frente_esquerda.png" />
+              </image>
+            </ImageView>
+            <ImageView id="ombroDireitoFrenteImageView" fx:id="ombroEsquerdoFrenteImageView" fitHeight="39.0" fitWidth="33.0" layoutX="146.0" layoutY="67.0" onMouseEntered="#mouseInOmbro" onMouseExited="#mouseOutOmbro" pickOnBounds="true" preserveRatio="false">
+              <image>
+                <Image url="@../../../../../resources/ombro_frente_direita.png" />
+              </image>
+            </ImageView>
+            <ImageView fx:id="peitoImageView" fitHeight="41.085561980388874" fitWidth="74.59223175048828" layoutX="87.0" layoutY="72.0" onMouseEntered="#mouseInPeito" onMouseExited="#mouseOutPeito" pickOnBounds="true" preserveRatio="true">
+              <image>
+                <Image url="@../../../../../resources/peito.png" />
+              </image>
+            </ImageView>
+            <ImageView id="peitoImageView" fx:id="bicepsDireitoImageView" fitHeight="47.69518280029297" fitWidth="17.74755859375" layoutX="161.0" layoutY="93.0" onMouseEntered="#mouseInBiceps" onMouseExited="#mouseOutBiceps" pickOnBounds="true" preserveRatio="false">
+              <image>
+                <Image url="@../../../../../resources/biceps-direito.png" />
+              </image>
+            </ImageView>
+            <ImageView id="bicepsImageView" fx:id="bicepsEsquerdoImageView" fitHeight="49.988887786865234" fitWidth="14.30868148803711" layoutX="73.0" layoutY="87.0" onMouseEntered="#mouseInBiceps" onMouseExited="#mouseOutBiceps" pickOnBounds="true" preserveRatio="false">
+              <image>
+                <Image url="@../../../../../resources/biceps-esquerdo.png" />
+              </image>
+            </ImageView>
+          </children>
+        </AnchorPane>
+      </children>
+    </AnchorPane>
+    <AnchorPane id="AnchorPane" prefHeight="591.0" prefWidth="368.0001220703125" AnchorPane.bottomAnchor="272.0" AnchorPane.leftAnchor="946.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="59.0">
+      <children>
+        <ListView fx:id="listaExercicios" orientation="VERTICAL" pickOnBounds="false" prefHeight="312.0" prefWidth="290.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="93.0" />
+        <Label layoutX="14.0" layoutY="70.0" text="Exercícios do grupo muscular selecionado:">
+          <font>
+            <Font size="14.0" fx:id="x1" />
+          </font>
+        </Label>
+        <Label font="$x1" layoutX="14.0" layoutY="14.0" text="Tipo de treino:" />
+        <RadioButton fx:id="radioButtonAparaB" layoutX="16.0" layoutY="40.0" mnemonicParsing="false" selected="true" text="A -&gt; B">
+          <toggleGroup>
+            <ToggleGroup fx:id="grupoTipoTreino" />
+          </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="radioButtonAparaD" layoutX="138.0" layoutY="40.0" mnemonicParsing="false" text="A -&gt; D" toggleGroup="$grupoTipoTreino" />
+        <RadioButton fx:id="radioButtonAparaC" layoutX="75.0" layoutY="40.0" mnemonicParsing="false" text="A -&gt; C" toggleGroup="$grupoTipoTreino" />
+        <RadioButton fx:id="radioButtonAparaE" layoutX="199.0" layoutY="40.0" mnemonicParsing="false" text="A -&gt; E" toggleGroup="$grupoTipoTreino" />
+        <RadioButton fx:id="radioButtonAparaF" layoutX="256.0" layoutY="40.0" mnemonicParsing="false" text="A -&gt; F" toggleGroup="$grupoTipoTreino" />
+      </children>
+    </AnchorPane>
+    <AnchorPane id="AnchorPane" fx:id="anchorPaneTabela" prefHeight="272.0" prefWidth="1314.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <children>
+        <TabPane prefHeight="272.0" prefWidth="1314.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <tabs>
+            <Tab fx:id="abaA" closable="false" text="Dia A">
+              <content>
+                <AnchorPane id="Content" fx:id="anchorPaneDiaA" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" />
+              </content>
+            </Tab>
+            <Tab fx:id="abaB" closable="false" text="Dia B">
+              <content>
+                <AnchorPane id="Content" fx:id="anchorPaneDiaB" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" />
+              </content>
+            </Tab>
+            <Tab fx:id="abaC" closable="false" disable="true" text="Dia C">
+              <content>
+                <AnchorPane id="Content" fx:id="anchorPaneDiaC" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" />
+              </content>
+            </Tab>
+            <Tab fx:id="abaD" closable="false" disable="true" text="Dia D">
+              <content>
+                <AnchorPane id="Content" fx:id="anchorPaneDiaD" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" />
+              </content>
+            </Tab>
+            <Tab fx:id="abaE" closable="false" disable="true" text="Dia E">
+              <content>
+                <AnchorPane id="Content" fx:id="anchorPaneDiaE" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" />
+              </content>
+            </Tab>
+            <Tab fx:id="abaF" closable="false" disable="true" text="Dia F">
+              <content>
+                <AnchorPane id="Content" fx:id="anchorPaneDiaF" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0" />
+              </content>
+            </Tab>
+          </tabs>
+        </TabPane>
+      </children>
+    </AnchorPane>
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>

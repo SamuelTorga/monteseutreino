@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPaneTabela" prefHeight="213.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.st.monteseutreino.controller.TablesController">
+      <children>
+        <TabPane prefHeight="208.0" prefWidth="1024.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+          <tabs>
+            <Tab fx:id="abaA" closable="false" text="Dia A">
+              <content>
+                <AnchorPane id="Content" fx:id="anchorPaneDiaA" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0">
+                  <children>
+                    <TableView fx:id="tabelaTreinoDiaA" prefHeight="184.0" prefWidth="892.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <columns>
+                        <TableColumn fx:id="colunaOrdemTabelaDiaA" editable="false" prefWidth="75.0" text="Ordem" />
+                        <TableColumn fx:id="colunaNomeExercicioTabelaDiaA" editable="false" prefWidth="75.0" text="Nome do Exercício" />
+                        <TableColumn fx:id="colunaGrupoMuscularTabelaDiaA" prefWidth="75.0" text="Grupo Muscular" />
+                        <TableColumn fx:id="colunaRepeticoesTabelaDiaA" prefWidth="75.0" text="Repetições" />
+                        <TableColumn fx:id="colunaSeriesTabelaDiaA" prefWidth="75.0" text="Series" />
+                        <TableColumn fx:id="colunaObservacoesTabelaDiaA" prefWidth="75.0" text="Observações" />
+                      </columns>
+                    </TableView>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="abaB" closable="false" text="Dia B">
+              <content>
+                <AnchorPane id="Content" fx:id="anchorPaneDiaB" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0">
+                  <children>
+                    <TableView id="tabelaTreinoDiaA" fx:id="tabelaTreinoDiaB" prefHeight="184.0" prefWidth="892.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                      <columns>
+                        <TableColumn editable="false" prefWidth="75.0" text="Ordem" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Nome do Exercício" />
+                        <TableColumn prefWidth="75.0" text="Grupo Muscular" />
+                        <TableColumn prefWidth="75.0" text="Repetições" />
+                        <TableColumn prefWidth="75.0" text="Series" />
+                        <TableColumn prefWidth="75.0" text="Observações" />
+                      </columns>
+                    </TableView>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="abaC" closable="false" disable="true" text="Dia C">
+              <content>
+                <AnchorPane id="Content" fx:id="anchorPaneDiaC" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0">
+                  <children>
+                    <TableView id="tabelaTreinoDiaA" fx:id="tabelaTreinoDiaC" layoutX="0.0" layoutY="0.0" prefHeight="184.0" prefWidth="892.0">
+                      <columns>
+                        <TableColumn editable="false" prefWidth="75.0" text="Ordem" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Nome do Exercício" />
+                        <TableColumn prefWidth="75.0" text="Grupo Muscular" />
+                        <TableColumn prefWidth="75.0" text="Repetições" />
+                        <TableColumn prefWidth="75.0" text="Series" />
+                        <TableColumn prefWidth="75.0" text="Observações" />
+                      </columns>
+                    </TableView>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="abaD" closable="false" disable="true" text="Dia D">
+              <content>
+                <AnchorPane id="Content" fx:id="anchorPaneDiaD" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0">
+                  <children>
+                    <TableView id="tabelaTreinoDiaA" fx:id="tabelaTreinoDiaD" layoutX="0.0" layoutY="0.0" prefHeight="184.0" prefWidth="892.0">
+                      <columns>
+                        <TableColumn editable="false" prefWidth="75.0" text="Ordem" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Nome do Exercício" />
+                        <TableColumn prefWidth="75.0" text="Grupo Muscular" />
+                        <TableColumn prefWidth="75.0" text="Repetições" />
+                        <TableColumn prefWidth="75.0" text="Series" />
+                        <TableColumn prefWidth="75.0" text="Observações" />
+                      </columns>
+                    </TableView>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="abaE" closable="false" disable="true" text="Dia E">
+              <content>
+                <AnchorPane id="Content" fx:id="anchorPaneDiaE" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0">
+                  <children>
+                    <TableView id="tabelaTreinoDiaA" fx:id="tabelaTreinoDiaE" layoutX="0.0" layoutY="0.0" prefHeight="184.0" prefWidth="892.0">
+                      <columns>
+                        <TableColumn editable="false" prefWidth="75.0" text="Ordem" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Nome do Exercício" />
+                        <TableColumn prefWidth="75.0" text="Grupo Muscular" />
+                        <TableColumn prefWidth="75.0" text="Repetições" />
+                        <TableColumn prefWidth="75.0" text="Series" />
+                        <TableColumn prefWidth="75.0" text="Observações" />
+                      </columns>
+                    </TableView>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="abaF" closable="false" disable="true" text="Dia F">
+              <content>
+                <AnchorPane id="Content" fx:id="anchorPaneDiaF" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="-1.0">
+                  <children>
+                    <TableView id="tabelaTreinoDiaA" fx:id="tabelaTreinoDiaF" layoutX="0.0" layoutY="0.0" prefHeight="184.0" prefWidth="892.0">
+                      <columns>
+                        <TableColumn editable="false" prefWidth="75.0" text="Ordem" />
+                        <TableColumn editable="false" prefWidth="75.0" text="Nome do Exercício" />
+                        <TableColumn prefWidth="75.0" text="Grupo Muscular" />
+                        <TableColumn prefWidth="75.0" text="Repetições" />
+                        <TableColumn prefWidth="75.0" text="Series" />
+                        <TableColumn prefWidth="75.0" text="Observações" />
+                      </columns>
+                    </TableView>
+                  </children>
+                </AnchorPane>
+              </content>
+            </Tab>
+          </tabs>
+        </TabPane>
+      </children>
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+</AnchorPane>
